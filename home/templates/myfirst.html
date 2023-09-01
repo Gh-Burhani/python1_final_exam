@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+{% load static %}
+{% block title %}Blog Posts{% endblock %}
+{% block content %}
+<h1>Blog Posts</h1>
+  
+<ul>
+  {% for x in posts %}
+   <h2> <li>{{ x.title }}</li></h2>
+    <h4><li>{{ x.content }}</li></h4>
+    <h4><li>{{ x.pub_date }}</li></h4>
+    <h4><li>{{ x.author }}</li></h4><br>
+  {% endfor %}
+</ul>
+{% endblock %}
