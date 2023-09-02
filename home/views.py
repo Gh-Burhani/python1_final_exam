@@ -16,11 +16,19 @@ def blogposts(reqquest):
 
 
 def product_list_view(request):
+    if request.method == "POST":
+        Name= request.POST['name']
+        Price= request.POST['price']
+        Description= request.POST['description']
+        add = Product(Nanme= Name, Price= Price, Description= Description)
+        add.save()
+    Data = Product.objects.all().values()
+    return render(request,"product_list_view.html",{'Data':Data})
 
-  products = Product.objects.all().values()
-  template = loader.get_template('product_list_view.html')
-  context = {
-    'products': products
-  }
-  return HttpResponse(template.render(context, request))
+  # products = Product.objects.all().values()
+  # template = loader.get_template('product_list_view.html')
+  # context = {
+  #   'products': products
+  # }
+  # return HttpResponse(template.render(context, request))
 

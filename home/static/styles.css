@@ -5,8 +5,26 @@ body {
     margin-left: 60px;
     
 }
+li{
+    color: white;
+
+}
 
 h1 {
     font-family: sans-serif;
     color: white;
+}
+
+.products {
+    font-family: sans-serif;
+    font-size: large;
+    font-style: normal;
+    color: rgb(190, 179, 179);
+}
+
+.tableproduct{
+    padding:0 10%;
+    padding-top: 40px;
+    margin: 10px auto 0;
+    margin-top: 0;
 }
