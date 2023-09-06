@@ -1,30 +1,119 @@
-body {
-    background-color: blue;
+body{
+    background-color: rgb(175, 152, 163);
+    background-repeat: no-repeat;
+  }
+
+  .blogh1{
     font-family: sans-serif;
-    padding: 50px;
-    margin-left: 60px;
-    
-}
-li{
-    color: white;
+    color: aquamarine;
+    padding-left: 40px;
+  }
 
+  .blogpost{
+    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 10px auto 0;
+    margin-top: 0;
+
+  }
+
+  .table2{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .th-blogpost{
+    background-color: blueviolet;
+    background-size: 100% 120px;
+  }
+  
+  .th-blogpost tr th{
+    font-size:30px;
+    font-weight:600;
+    letter-spacing:0.35px;
+    color: #FFFFFF;
+    opacity:1;
+    padding:12px;
+    vertical-align:top;
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+
+  .data-label{
+    font-size:14 px;
+    Letter-spacing:0.35px;
+    font-weight:normal;
+    background-color: #96D4D4;
+    padding:8 px;
+    text-align:center;
+    border: 1px solid white;
+    border-style: outset;
+    background-color: #67f79e;
+  }
+
+  /* product */
+
+  .product {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUCo2GR0dSao2nJOqrIEgS7Bs3o5sUsO5ZA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:sans-serif;
 }
 
-h1 {
-    font-family: sans-serif;
-    color: white;
-}
-
-.products {
-    font-family: sans-serif;
-    font-size: large;
-    font-style: normal;
-    color: rgb(190, 179, 179);
-}
-
-.tableproduct{
-    padding:0 10%;
+.table-container
+{
+    padding: 10%;
+    padding-left: 40px;
     padding-top: 40px;
     margin: 10px auto 0;
     margin-top: 0;
+}
+
+.heading 
+{
+    font-size: 40 px;
+    text-align: center;
+    color:#f1f1f1;
+    margin-bottom:40px;
+}
+.table 
+{
+    width:100%;
+    border-collapse:collapse;
+}
+.table thead {
+    background-color: #5aa557;
+}
+
+.table thead tr th 
+{
+    font-size:25px;
+    font-weight:600;
+    letter-spacing:0.35px;
+    color: #FFFFFF;
+    opacity:1;
+    padding:12px;
+    vertical-align:top;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.table tr td 
+{
+    font-size:14 px;
+    Letter-spacing:0.35px;
+    font-weight:normal;
+    background-color: #96D4D4;
+    text-align:center;
+    border: 1px solid white;
+    border-style: outset;
+    background-color: #67f79e;
+}
+
+.indexh1{
+    color: white;
+    padding-top: 20px;
+    padding-left: 30px;  
+    margin-left: 40px;
 }

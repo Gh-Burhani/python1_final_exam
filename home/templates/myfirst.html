@@ -1,14 +1,39 @@
-{% extends "master.html" %}
 {% load static %}
-{% block title %}Blog Posts{% endblock %}
-{% block content %}
-<h1>Blog Posts</h1>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>BlogPost</title>
 
-<ul>
-  <li ><a href="/title/">title</a></li>
-  <li><a href="/content/">content</a></li>
-  <li><a href="/pub_date/">pub_date</a></li>
-  <li><a href="/author/">author</a></li>
-</ul>
-{% endblock %}
+</head>
+<body>
+<h1 class="blogh1">Blog Posts</h1>
+
+ <div class="blogpost">
+    <table class="table2" id="dataTable" width="100%" cellspacing="0">
+        <thead class="th-blogpost">
+            <tr>
+              <th>Title</th>
+              <th>Content</th>
+              <th>Publiction Date</th>
+              <th>Author</th>
+            </tr>
+        </thead>
+ 
+    {% for x in post %}
+            <tr class="data-label">
+              <td data-label="Title">{{x.title}}</td>
+              <td data-label="Content">{{x.content}}</td>
+              <td data-label="Pub_date">{{x.pub_date}}</td>
+              <td data-label="Author">{{x.author}}</td>
+            </tr>
+    {% endfor %}
+    </table>
+  </div>
+</body>          
+</html>

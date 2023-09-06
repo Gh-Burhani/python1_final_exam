@@ -3,7 +3,7 @@ from django.db import models
 class BlogPost(models.Model):
     title = models.CharField(max_length=250)
     content = models.CharField(max_length=250)
-    pub_data = models.DateField()
+    pub_date = models.DateField()
     author =models.CharField(null=True, max_length=250)
 
 class Product(models.Model):
